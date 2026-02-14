@@ -2,7 +2,8 @@
 
 Welcome to BookMyCare, a web application that simplifies healthcare services. This project was created during a hackathon to streamline the process of booking appointments with medical practitioners, accessing hospital services, and contacting doctors.
 
-![Page screenshot](https://apex-care.netlify.app/screenshots/page.png)
+![Page Screenshot](public/screenshots/page.png)
+
 
 ## Table of contents
 
