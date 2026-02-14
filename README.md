@@ -1,6 +1,6 @@
-# Apex Care
+# BookMyCare
 
-Welcome to Apex Care, a web application that simplifies healthcare services. This project was created during a hackathon to streamline the process of booking appointments with medical practitioners, accessing hospital services, and contacting doctors.
+Welcome to BookMyCare, a web application that simplifies healthcare services. This project was created during a hackathon to streamline the process of booking appointments with medical practitioners, accessing hospital services, and contacting doctors.
 
 ![Page screenshot](https://apex-care.netlify.app/screenshots/page.png)
 
@@ -29,7 +29,7 @@ Welcome to Apex Care, a web application that simplifies healthcare services. Thi
 
 ## Installation
 
-To run Apex Care locally, follow these steps:
+To run BookMyCare locally, follow these steps:
 
 ### Clone the repository:
 
@@ -55,24 +55,21 @@ npm install
 npm run dev
 ```
 
-Open your browser and visit [http://localhost:3000](http://localhost:3000) to access Apex Care.
+Open your browser and visit [http://localhost:3000](http://localhost:3000) to access BookMyCare.
 
 ## Usage
 
-Apex Care is designed to be user-friendly, and most of its features are self-explanatory. Simply follow the on-screen instructions to navigate and utilize its functionalities.
+BookMyCare is designed to be user-friendly, and most of its features are self-explanatory. Simply follow the on-screen instructions to navigate and utilize its functionalities.
 
 ## Contribution
 
-We welcome contributions from the community. If you'd like to contribute to Apex Care, please follow these general guidelines:
+We welcome contributions from the community. If you'd like to contribute to BookMyCare, please follow these general guidelines:
 
 1. Fork the repository.
 2. Create a new branch for your feature or bug fix.
 3. Make your changes, ensuring clear code and comments.
 4. Submit a pull request, describing your changes in detail.
 
-## Contact
-
-For questions, feedback, or inquiries, feel free to reach out to us at [adewaletaiwo08@gmail.com](mailto:adewaletaiwo08@gmail.com).
 
 ## License
 
