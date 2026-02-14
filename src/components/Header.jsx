@@ -35,7 +35,7 @@ const Header = () => {
         <div className="relative py-5">
           <div className="container flex items-center justify-between">
             <Link to="/" className="text-3xl font-bold text-secondary">
-              ApexCare
+              BookMyCare
             </Link>
 
             <nav className="hidden lg:block">

@@ -35,7 +35,6 @@ const BookAppointment = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     console.log(state.appointmentDetails);
   };
 
@@ -45,8 +44,8 @@ const BookAppointment = () => {
         <div className="md:max-w-[630px] relative lg:max-w-[700px] w-full bg-white px-6 py-30px md:p-[3.125rem] shadow-appointment md:ml-auto lg:mr-28 before:absolute before:content-[''] before:bg-white before:w-[96%] before:opacity-60 before:h-1/2 before:-bottom-5 before:left-0 before:right-0 before:m-auto before:rounded-[3px]">
           <SectionTitle
             center={false}
-            title="Book Appointment"
-            heading="We are here for you"
+            title="Book an Appointment"
+            heading="Quick & Easy Doctor Booking"
             className="mb-6 text-center md:text-left md:mb-30px"
           />
 
@@ -54,17 +53,17 @@ const BookAppointment = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-6 md:gap-y-30px">
               <FormInput
                 icon={<BsPerson />}
-                label="Your Name"
+                label="Patient Name"
                 value={name}
                 name="name"
                 dispatch={dispatch}
-                placeholder="Enter Your Name"
+                placeholder="Enter patient name"
               />
 
               <FormSelect
                 selectList={doctorsList}
                 icon={<BsEnvelope />}
-                label="Select your doctor"
+                label="Choose Doctor"
                 id="doctor-select"
                 name="doctor"
                 value={doctor}
@@ -74,7 +73,7 @@ const BookAppointment = () => {
               <FormSelect
                 selectList={servicesList}
                 icon={<BsBriefcase />}
-                label="Select your services"
+                label="Select Department / Service"
                 id="service-select"
                 name="service"
                 value={service}
@@ -83,43 +82,45 @@ const BookAppointment = () => {
 
               <FormInput
                 icon={<BsTelephone />}
-                label="Your Phone"
+                label="Mobile Number"
                 value={phone}
                 name="phone"
                 dispatch={dispatch}
-                placeholder="Enter Your Phone"
+                placeholder="Enter 10-digit mobile number"
               />
 
               <FormInput
                 icon={<BsCalendar2Week />}
-                label="Select Date"
+                label="Preferred Date"
                 value={date}
                 name="date"
                 dispatch={dispatch}
-                placeholder="dd/mm/yy"
+                placeholder="DD/MM/YYYY"
               />
 
               <FormInput
                 icon={<BsClock />}
-                label="Add Time"
+                label="Preferred Time"
                 value={time}
                 name="time"
                 dispatch={dispatch}
-                placeholder="15.00AM"
+                placeholder="e.g. 10:30 AM"
               />
 
               <FormTextArea
                 icon={<BsChatDots />}
-                label="Special Request"
+                label="Health Concern (Optional)"
                 value={request}
                 name="request"
                 dispatch={dispatch}
-                placeholder="Type message..."
+                placeholder="Briefly describe your problem"
               />
             </div>
 
             <div className="text-center mt-30px md:mt-[2.25rem]">
-              <Button icon={<FaChevronRight />}>Make Appointment</Button>
+              <Button icon={<FaChevronRight />}>
+                Book Appointment
+              </Button>
             </div>
           </form>
         </div>

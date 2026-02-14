@@ -24,9 +24,9 @@ const Feedback = ({ bgShape }) => {
       <div className="container">
         <SectionTitle
           center={true}
-          title="Feedback"
-          heading="Our Happy Clients Says About Us"
-          desc="Our testimonials section showcases real stories from real people who have improved their health and wellness with our products and services."
+          title="Patient Reviews"
+          heading="What Our Patients Say"
+          desc="Real feedback from patients who trusted us with their healthcare needs and experienced quality medical support."
           className="mb-[2.1875rem] md:mb-[3.75rem]"
         />
 
@@ -89,7 +89,7 @@ const Feedback = ({ bgShape }) => {
               <button className="swiper-button-prev w-10 h-10 lg:w-[45px] lg:h-[45px] rounded-full flex justify-center items-center text-xl lg:text-2xl text-secondary bg-[#f0f0f0] cursor-pointer md:absolute md:top-1/2 md:-translate-y-1/2 -left-1.5 lg:-left-5 z-10 hover:text-white hover:bg-primary transition-500">
                 <BsArrowLeft />
               </button>
-              <button className="swiper-button-next w-10 h-10 lg:w-[45px] lg:h-[45px] rounded-full flex justify-center items-center text-xl lg:text-2xl text-secondary bg-[#f0f0f0] cursor-pointer md:absolute md:top-1/2 md:-translate-y-1/2 -right-1.5 lg:-right-5 2 z-10 hover:text-white hover:bg-primary transition-500">
+              <button className="swiper-button-next w-10 h-10 lg:w-[45px] lg:h-[45px] rounded-full flex justify-center items-center text-xl lg:text-2xl text-secondary bg-[#f0f0f0] cursor-pointer md:absolute md:top-1/2 md:-translate-y-1/2 -right-1.5 lg:-right-5 z-10 hover:text-white hover:bg-primary transition-500">
                 <BsArrowRight />
               </button>
             </div>

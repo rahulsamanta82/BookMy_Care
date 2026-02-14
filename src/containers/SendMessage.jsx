@@ -19,7 +19,6 @@ const SendMessage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     console.log(state.contactDetails);
   };
 
@@ -28,9 +27,9 @@ const SendMessage = () => {
       <div className="container">
         <SectionTitle
           center={true}
-          title="Send Message"
-          heading="Drop us message for any query"
-          desc="If you have an idea, we would love to hear about it."
+          title="Contact Us"
+          heading="We're Here to Help You"
+          desc="Have a question about appointments, doctors, or services? Reach out to us anytime."
           className="mb-[2.1875rem] md:mb-[3.75rem]"
         />
 
@@ -42,7 +41,7 @@ const SendMessage = () => {
             <div className="w-full mb-4 md:w-[calc(50%-7px)]">
               <input
                 type="text"
-                placeholder="Name"
+                placeholder="Full Name"
                 value={name}
                 onChange={(e) =>
                   dispatch({
@@ -60,7 +59,7 @@ const SendMessage = () => {
             <div className="w-full mb-4 md:w-[calc(50%-7px)]">
               <input
                 type="email"
-                placeholder="Email"
+                placeholder="Email Address"
                 value={email}
                 onChange={(e) =>
                   dispatch({
@@ -78,7 +77,7 @@ const SendMessage = () => {
             <div className="w-full mb-4 md:w-[calc(50%-7px)]">
               <input
                 type="text"
-                placeholder="Phone"
+                placeholder="Mobile Number"
                 value={phone}
                 onChange={(e) =>
                   dispatch({
@@ -96,7 +95,7 @@ const SendMessage = () => {
             <div className="w-full mb-4 md:w-[calc(50%-7px)]">
               <input
                 type="text"
-                placeholder="Subject"
+                placeholder="Subject / Query Type"
                 value={subject}
                 onChange={(e) =>
                   dispatch({
@@ -113,7 +112,7 @@ const SendMessage = () => {
 
             <div className="w-full mb-4">
               <textarea
-                placeholder="Your Message"
+                placeholder="Write your message here..."
                 value={message}
                 onChange={(e) =>
                   dispatch({
@@ -129,7 +128,7 @@ const SendMessage = () => {
             </div>
 
             <div className="w-full md:w-1/22 text-center mt-2.5">
-              <Button icon={<FaChevronRight />}>Send Message</Button>
+              <Button icon={<FaChevronRight />}>Submit Enquiry</Button>
             </div>
           </form>
 
@@ -141,57 +140,59 @@ const SendMessage = () => {
                 </div>
                 <div>
                   <span className="block font-semibold mb-1.5 text-17px text-secondary font-poppins md:mb-2 md:text-20px">
-                    Address
+                    Head Office
                   </span>
                   <span className="block text-textPrimary text-13px md:text-15px">
-                    CA 560 Bush St & 20th Ave, Apt 5
+                    3rd Floor, Health Plaza, MG Road
                   </span>
                   <span className="block text-textPrimary text-13px md:text-15px">
-                    San Francisco, 230909, Canada
+                    Bengaluru, Karnataka 560001, India
                   </span>
                 </div>
               </li>
+
               <li className="mb-9 relative pl-[5.125rem] md:pl-[5.9375rem]">
                 <div className="absolute border text-white text-xl md:text-2xl border-dashed border-primary w-[4.0625rem] md:w-[4.6875rem] h-[4.0625rem] md:h-[4.6875rem] rounded-full top-0 left-0 before:absolute before:content-[''] before:inset-0 before:bg-primary before:rounded-full before:m-1.5 before:shadow-contact-icon flex justify-center items-center">
                   <FaEnvelope className="relative z-[2]" />
                 </div>
                 <div>
                   <span className="block font-semibold mb-1.5 text-17px text-secondary font-poppins md:mb-2 md:text-20px">
-                    Email
+                    Email Support
                   </span>
                   <a
-                    href="mailto:apexcare@gmail.com"
+                    href="mailto:support@bookmycare.in"
                     className="block text-textPrimary text-13px md:text-15px hover:text-primary transition-300"
                   >
-                    apexcare@gmail.com
+                    support@bookmycare.in
                   </a>
                   <a
-                    href="mailto:fax@apex-care.com"
+                    href="mailto:care@bookmycare.in"
                     className="block text-textPrimary text-13px md:text-15px hover:text-primary transition-300"
                   >
-                    fax@apex-care.com
+                    care@bookmycare.in
                   </a>
                 </div>
               </li>
+
               <li className="mb-9 relative pl-[5.125rem] md:pl-[5.9375rem]">
                 <div className="absolute border text-white text-xl md:text-2xl border-dashed border-primary w-[4.0625rem] md:w-[4.6875rem] h-[4.0625rem] md:h-[4.6875rem] rounded-full top-0 left-0 before:absolute before:content-[''] before:inset-0 before:bg-primary before:rounded-full before:m-1.5 before:shadow-contact-icon flex justify-center items-center">
                   <FaPhoneAlt className="relative z-[2]" />
                 </div>
                 <div>
                   <span className="block font-semibold mb-1.5 text-17px text-secondary font-poppins md:mb-2 md:text-20px">
-                    Phone
+                    Helpline
                   </span>
                   <a
-                    href="tel:+2345543323224"
+                    href="tel:+919876543210"
                     className="block text-textPrimary text-13px md:text-15px hover:text-primary transition-300"
                   >
-                    +234 554 332 3224
+                    +91 98765 43210
                   </a>
                   <a
-                    href="tel:+2343783243224"
+                    href="tel:+918765432109"
                     className="block text-textPrimary text-13px md:text-15px hover:text-primary transition-300"
                   >
-                    +234 378 324 3224
+                    +91 87654 32109
                   </a>
                 </div>
               </li>

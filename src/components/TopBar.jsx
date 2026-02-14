@@ -13,7 +13,7 @@ const TopBar = () => {
               <BsClock />
             </span>
             <span className="text-secondary text-sm">
-              Mon - Fri 09:00 - 17:00
+              Mon - Sat 9:00 AM - 8:00 PM
             </span>
           </li>
 
@@ -24,10 +24,10 @@ const TopBar = () => {
             <span className="text-secondary text-sm">
               Call Us:{" "}
               <a
-                href="tel:+2345543323224"
+                href="tel:+919876543210"
                 className="hover:text-primary transition-300"
               >
-                +234 554 332 3224
+                +91 98765 43210
               </a>
             </span>
           </li>
@@ -37,10 +37,10 @@ const TopBar = () => {
               <IoMdPaperPlane />
             </span>
             <a
-              href="mailto:apexcare@gmail.com"
+              href="mailto:support@bookmycare.in"
               className="text-secondary text-sm hover:text-primary transition-300"
             >
-              apexcare@gmail.com
+              support@bookmycare.in
             </a>
           </li>
         </ul>

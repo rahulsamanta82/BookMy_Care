@@ -6,9 +6,9 @@ const Calendar = () => {
       <div className="container">
         <SectionTitle
           center={true}
-          title="Calendar"
-          heading="Determine Your Date to Come"
-          desc="Stay up-to-date with your appointments by viewing them on our easy-to-use online calendar. Manage your schedule and ensure you never miss a visit with us."
+          title="Doctor Schedule"
+          heading="Select Your Appointment Slot"
+          desc="Check doctor availability and choose a convenient time for your consultation. Book easily and avoid long waiting hours at the clinic."
           className="mb-[2.1875rem] md:mb-[3.75rem]"
         />
 
@@ -16,216 +16,245 @@ const Calendar = () => {
           <table className="w-full text-center">
             <thead>
               <tr>
-                <th className="py-4 font-medium text-white uppercase border-b bg-primary whitespace-nowrap text-15px md:text-base border-b-white">
+                <th className="py-4 font-medium text-white uppercase border-b bg-primary border-b-white">
                   Time
                 </th>
-                <th className="py-4 font-medium text-white uppercase border-b bg-primary whitespace-nowrap text-15px md:text-base border-b-white">
+                <th className="py-4 font-medium text-white uppercase border-b bg-primary border-b-white">
                   Monday
                 </th>
-                <th className="py-4 font-medium text-white uppercase border-b bg-primary whitespace-nowrap text-15px md:text-base border-b-white">
+                <th className="py-4 font-medium text-white uppercase border-b bg-primary border-b-white">
                   Tuesday
                 </th>
-                <th className="py-4 font-medium text-white uppercase border-b bg-primary whitespace-nowrap text-15px md:text-base border-b-white">
+                <th className="py-4 font-medium text-white uppercase border-b bg-primary border-b-white">
                   Wednesday
                 </th>
-                <th className="py-4 font-medium text-white uppercase border-b bg-primary whitespace-nowrap text-15px md:text-base border-b-white">
+                <th className="py-4 font-medium text-white uppercase border-b bg-primary border-b-white">
                   Thursday
                 </th>
-                <th className="py-4 font-medium text-white uppercase border-b bg-primary whitespace-nowrap text-15px md:text-base border-b-white">
+                <th className="py-4 font-medium text-white uppercase border-b bg-primary border-b-white">
                   Friday
                 </th>
-                <th className="py-4 font-medium text-white uppercase border-b bg-primary whitespace-nowrap text-15px md:text-base border-b-white">
+                <th className="py-4 font-medium text-white uppercase border-b bg-primary border-b-white">
                   Saturday
                 </th>
               </tr>
             </thead>
 
             <tbody>
+              {/* 9:00 AM */}
               <tr>
-                <td className="group hover:bg-primary p-4 border border-[#eeeeee] border-t-0 transition-500 md:p-6 first:border-l-0 last:border-r-0">
-                  <span className="w-[3.4375rem] h-[3.4375rem] !leading-[3.4375rem] text-sm inline-block bg-[#dff5e8] text-primary rounded-full font-medium transition-500 md:w-[4.0625rem] md:h-[4.0625rem] md:!leading-[4.0625rem] md:text-base group-hover:bg-white group-hover:text-primary">
-                    9.00
+                <td className="p-6 border border-[#eeeeee] border-t-0">
+                  <span className="inline-block bg-[#dff5e8] text-primary rounded-full font-medium px-4 py-2">
+                    9:00 AM
                   </span>
                 </td>
-                <td className="group hover:bg-primary p-4 border border-[#eeeeee] border-t-0 transition-500 md:p-6 first:border-l-0 last:border-r-0">
-                  <h3 className="font-semibold text-15px text-secondary transition-500 group-hover:text-white md:text-base">
-                    Dr. Tanner
+
+                <td className="p-6 border border-[#eeeeee] border-t-0">
+                  <h3 className="font-semibold text-secondary">
+                    Dr. Rakesh Sharma
                   </h3>
-                  <span className="text-13px md:text-15px text-textPrimary block mt-1.5 transition-500 group-hover:text-white">
-                    Dermatologists
+                  <span className="block mt-1 text-textPrimary">
+                    Dermatologist
                   </span>
                 </td>
-                <td className="group hover:bg-primary p-4 border border-[#eeeeee] border-t-0 transition-500 md:p-6 first:border-l-0 last:border-r-0">
-                  <h3 className="font-semibold text-15px text-secondary transition-500 group-hover:text-white md:text-base">
-                    Dr. Kwak
+
+                <td className="p-6 border border-[#eeeeee] border-t-0">
+                  <h3 className="font-semibold text-secondary">
+                    Dr. Priya Nair
                   </h3>
-                  <span className="text-13px md:text-15px text-textPrimary block mt-1.5 transition-500 group-hover:text-white">
-                    Ear, Nose
+                  <span className="block mt-1 text-textPrimary">
+                    ENT Specialist
                   </span>
                 </td>
-                <td className="group hover:bg-primary p-4 border border-[#eeeeee] border-t-0 transition-500 md:p-6 first:border-l-0 last:border-r-0">
-                  <h3 className="font-semibold text-15px text-secondary transition-500 group-hover:text-white md:text-base">
-                    Dr. Slaughter
+
+                <td className="p-6 border border-[#eeeeee] border-t-0">
+                  <h3 className="font-semibold text-secondary">
+                    Dr. Amit Verma
                   </h3>
-                  <span className="text-13px md:text-15px text-textPrimary block mt-1.5 transition-500 group-hover:text-white">
+                  <span className="block mt-1 text-textPrimary">
                     Neurologist
                   </span>
                 </td>
-                <td className="group hover:bg-primary p-4 border border-[#eeeeee] border-t-0 transition-500 md:p-6 first:border-l-0 last:border-r-0"></td>
-                <td className="group hover:bg-primary p-4 border border-[#eeeeee] border-t-0 transition-500 md:p-6 first:border-l-0 last:border-r-0">
-                  <h3 className="font-semibold text-15px text-secondary transition-500 group-hover:text-white md:text-base">
-                    Dr. Foley
+
+                <td className="p-6 border border-[#eeeeee] border-t-0"></td>
+
+                <td className="p-6 border border-[#eeeeee] border-t-0">
+                  <h3 className="font-semibold text-secondary">
+                    Dr. Sneha Kulkarni
                   </h3>
-                  <span className="text-13px md:text-15px text-textPrimary block mt-1.5 transition-500 group-hover:text-white">
+                  <span className="block mt-1 text-textPrimary">
                     Oncologist
                   </span>
                 </td>
-                <td className="group hover:bg-primary p-4 border border-[#eeeeee] border-t-0 transition-500 md:p-6 first:border-l-0 last:border-r-0">
-                  <h3 className="font-semibold text-15px text-secondary transition-500 group-hover:text-white md:text-base">
-                    Dr. Palmer
+
+                <td className="p-6 border border-[#eeeeee] border-t-0">
+                  <h3 className="font-semibold text-secondary">
+                    Dr. Arjun Patel
                   </h3>
-                  <span className="text-13px md:text-15px text-textPrimary block mt-1.5 transition-500 group-hover:text-white">
-                    Maxine lowe
+                  <span className="block mt-1 text-textPrimary">
+                    General Physician
                   </span>
                 </td>
               </tr>
 
+              {/* 12:00 PM */}
               <tr>
-                <td className="group hover:bg-primary p-4 border border-[#eeeeee] border-t-0 transition-500 md:p-6 first:border-l-0 last:border-r-0">
-                  <span className="w-[3.4375rem] h-[3.4375rem] !leading-[3.4375rem] text-sm inline-block bg-[#dff5e8] text-primary rounded-full font-medium transition-500 md:w-[4.0625rem] md:h-[4.0625rem] md:!leading-[4.0625rem] md:text-base group-hover:bg-white group-hover:text-primary">
-                    12.00
+                <td className="p-6 border border-[#eeeeee] border-t-0">
+                  <span className="inline-block bg-[#dff5e8] text-primary rounded-full font-medium px-4 py-2">
+                    12:00 PM
                   </span>
                 </td>
-                <td className="group hover:bg-primary p-4 border border-[#eeeeee] border-t-0 transition-500 md:p-6 first:border-l-0 last:border-r-0"></td>
-                <td className="group hover:bg-primary p-4 border border-[#eeeeee] border-t-0 transition-500 md:p-6 first:border-l-0 last:border-r-0">
-                  <h3 className="font-semibold text-15px text-secondary transition-500 group-hover:text-white md:text-base">
-                    Dr. Megahead
+
+                <td className="p-6 border border-[#eeeeee] border-t-0"></td>
+
+                <td className="p-6 border border-[#eeeeee] border-t-0">
+                  <h3 className="font-semibold text-secondary">
+                    Dr. Karan Singh
                   </h3>
-                  <span className="text-13px md:text-15px text-textPrimary block mt-1.5 transition-500 group-hover:text-white">
-                    Orthopedics
+                  <span className="block mt-1 text-textPrimary">
+                    Orthopaedic Surgeon
                   </span>
                 </td>
-                <td className="group hover:bg-primary p-4 border border-[#eeeeee] border-t-0 transition-500 md:p-6 first:border-l-0 last:border-r-0">
-                  <h3 className="font-semibold text-15px text-secondary transition-500 group-hover:text-white md:text-base">
-                    Dr. Neupane
+
+                <td className="p-6 border border-[#eeeeee] border-t-0">
+                  <h3 className="font-semibold text-secondary">
+                    Dr. Meena Iyer
                   </h3>
-                  <span className="text-13px md:text-15px text-textPrimary block mt-1.5 transition-500 group-hover:text-white">
+                  <span className="block mt-1 text-textPrimary">
                     Pain Management
                   </span>
                 </td>
-                <td className="group hover:bg-primary p-4 border border-[#eeeeee] border-t-0 transition-500 md:p-6 first:border-l-0 last:border-r-0">
-                  <h3 className="font-semibold text-15px text-secondary transition-500 group-hover:text-white md:text-base">
-                    Dr. Breidin
+
+                <td className="p-6 border border-[#eeeeee] border-t-0">
+                  <h3 className="font-semibold text-secondary">
+                    Dr. Rahul Deshmukh
                   </h3>
-                  <span className="text-13px md:text-15px text-textPrimary block mt-1.5 transition-500 group-hover:text-white">
+                  <span className="block mt-1 text-textPrimary">
                     Radiologist
                   </span>
                 </td>
-                <td className="group hover:bg-primary p-4 border border-[#eeeeee] border-t-0 transition-500 md:p-6 first:border-l-0 last:border-r-0"></td>
-                <td className="group hover:bg-primary p-4 border border-[#eeeeee] border-t-0 transition-500 md:p-6 first:border-l-0 last:border-r-0">
-                  <h3 className="font-semibold text-15px text-secondary transition-500 group-hover:text-white md:text-base">
-                    Dr. Pipe
+
+                <td className="p-6 border border-[#eeeeee] border-t-0"></td>
+
+                <td className="p-6 border border-[#eeeeee] border-t-0">
+                  <h3 className="font-semibold text-secondary">
+                    Dr. Neha Choudhary
                   </h3>
-                  <span className="text-13px md:text-15px text-textPrimary block mt-1.5 transition-500 group-hover:text-white">
-                    Surgeons
+                  <span className="block mt-1 text-textPrimary">
+                    General Surgeon
                   </span>
                 </td>
               </tr>
 
+              {/* 3:00 PM */}
               <tr>
-                <td className="group hover:bg-primary p-4 border border-[#eeeeee] border-t-0 transition-500 md:p-6 first:border-l-0 last:border-r-0">
-                  <span className="w-[3.4375rem] h-[3.4375rem] !leading-[3.4375rem] text-sm inline-block bg-[#dff5e8] text-primary rounded-full font-medium transition-500 md:w-[4.0625rem] md:h-[4.0625rem] md:!leading-[4.0625rem] md:text-base group-hover:bg-white group-hover:text-primary">
-                    15.00
+                <td className="p-6 border border-[#eeeeee] border-t-0">
+                  <span className="inline-block bg-[#dff5e8] text-primary rounded-full font-medium px-4 py-2">
+                    3:00 PM
                   </span>
                 </td>
-                <td className="group hover:bg-primary p-4 border border-[#eeeeee] border-t-0 transition-500 md:p-6 first:border-l-0 last:border-r-0">
-                  <h3 className="font-semibold text-15px text-secondary transition-500 group-hover:text-white md:text-base">
-                    Dr. Tanner
+
+                <td className="p-6 border border-[#eeeeee] border-t-0">
+                  <h3 className="font-semibold text-secondary">
+                    Dr. Rakesh Sharma
                   </h3>
-                  <span className="text-13px md:text-15px text-textPrimary block mt-1.5 transition-500 group-hover:text-white">
-                    Dermatologists
+                  <span className="block mt-1 text-textPrimary">
+                    Dermatologist
                   </span>
                 </td>
-                <td className="group hover:bg-primary p-4 border border-[#eeeeee] border-t-0 transition-500 md:p-6 first:border-l-0 last:border-r-0">
-                  <h3 className="font-semibold text-15px text-secondary transition-500 group-hover:text-white md:text-base">
-                    Dr. Kwak
+
+                <td className="p-6 border border-[#eeeeee] border-t-0">
+                  <h3 className="font-semibold text-secondary">
+                    Dr. Priya Nair
                   </h3>
-                  <span className="text-13px md:text-15px text-textPrimary block mt-1.5 transition-500 group-hover:text-white">
-                    Ear, Nose
+                  <span className="block mt-1 text-textPrimary">
+                    ENT Specialist
                   </span>
                 </td>
-                <td className="group hover:bg-primary p-4 border border-[#eeeeee] border-t-0 transition-500 md:p-6 first:border-l-0 last:border-r-0"></td>
-                <td className="group hover:bg-primary p-4 border border-[#eeeeee] border-t-0 transition-500 md:p-6 first:border-l-0 last:border-r-0">
-                  <h3 className="font-semibold text-15px text-secondary transition-500 group-hover:text-white md:text-base">
-                    Dr. Slaughter
+
+                <td className="p-6 border border-[#eeeeee] border-t-0"></td>
+
+                <td className="p-6 border border-[#eeeeee] border-t-0">
+                  <h3 className="font-semibold text-secondary">
+                    Dr. Amit Verma
                   </h3>
-                  <span className="text-13px md:text-15px text-textPrimary block mt-1.5 transition-500 group-hover:text-white">
+                  <span className="block mt-1 text-textPrimary">
                     Neurologist
                   </span>
                 </td>
-                <td className="group hover:bg-primary p-4 border border-[#eeeeee] border-t-0 transition-500 md:p-6 first:border-l-0 last:border-r-0">
-                  <h3 className="font-semibold text-15px text-secondary transition-500 group-hover:text-white md:text-base">
-                    Dr. Foley
+
+                <td className="p-6 border border-[#eeeeee] border-t-0">
+                  <h3 className="font-semibold text-secondary">
+                    Dr. Sneha Kulkarni
                   </h3>
-                  <span className="text-13px md:text-15px text-textPrimary block mt-1.5 transition-500 group-hover:text-white">
+                  <span className="block mt-1 text-textPrimary">
                     Oncologist
                   </span>
                 </td>
-                <td className="group hover:bg-primary p-4 border border-[#eeeeee] border-t-0 transition-500 md:p-6 first:border-l-0 last:border-r-0"></td>
+
+                <td className="p-6 border border-[#eeeeee] border-t-0"></td>
               </tr>
 
+              {/* 6:00 PM */}
               <tr>
-                <td className="group hover:bg-primary p-4 border border-[#eeeeee] border-t-0 transition-500 md:p-6 first:border-l-0 last:border-r-0">
-                  <span className="w-[3.4375rem] h-[3.4375rem] !leading-[3.4375rem] text-sm inline-block bg-[#dff5e8] text-primary rounded-full font-medium transition-500 md:w-[4.0625rem] md:h-[4.0625rem] md:!leading-[4.0625rem] md:text-base group-hover:bg-white group-hover:text-primary">
-                    18.00
+                <td className="p-6 border border-[#eeeeee] border-t-0">
+                  <span className="inline-block bg-[#dff5e8] text-primary rounded-full font-medium px-4 py-2">
+                    6:00 PM
                   </span>
                 </td>
-                <td className="group hover:bg-primary p-4 border border-[#eeeeee] border-t-0 transition-500 md:p-6 first:border-l-0 last:border-r-0">
-                  <h3 className="font-semibold text-15px text-secondary transition-500 group-hover:text-white md:text-base">
-                    Dr. Slaughter
+
+                <td className="p-6 border border-[#eeeeee] border-t-0">
+                  <h3 className="font-semibold text-secondary">
+                    Dr. Amit Verma
                   </h3>
-                  <span className="text-13px md:text-15px text-textPrimary block mt-1.5 transition-500 group-hover:text-white">
+                  <span className="block mt-1 text-textPrimary">
                     Neurologist
                   </span>
                 </td>
-                <td className="group hover:bg-primary p-4 border border-[#eeeeee] border-t-0 transition-500 md:p-6 first:border-l-0 last:border-r-0">
-                  <h3 className="font-semibold text-15px text-secondary transition-500 group-hover:text-white md:text-base">
-                    Dr. Megahead
+
+                <td className="p-6 border border-[#eeeeee] border-t-0">
+                  <h3 className="font-semibold text-secondary">
+                    Dr. Karan Singh
                   </h3>
-                  <span className="text-13px md:text-15px text-textPrimary block mt-1.5 transition-500 group-hover:text-white">
-                    Orthopedics
+                  <span className="block mt-1 text-textPrimary">
+                    Orthopaedic Surgeon
                   </span>
                 </td>
-                <td className="group hover:bg-primary p-4 border border-[#eeeeee] border-t-0 transition-500 md:p-6 first:border-l-0 last:border-r-0">
-                  <h3 className="font-semibold text-15px text-secondary transition-500 group-hover:text-white md:text-base">
-                    Dr. Neupane
+
+                <td className="p-6 border border-[#eeeeee] border-t-0">
+                  <h3 className="font-semibold text-secondary">
+                    Dr. Meena Iyer
                   </h3>
-                  <span className="text-13px md:text-15px text-textPrimary block mt-1.5 transition-500 group-hover:text-white">
+                  <span className="block mt-1 text-textPrimary">
                     Pain Management
                   </span>
                 </td>
-                <td className="group hover:bg-primary p-4 border border-[#eeeeee] border-t-0 transition-500 md:p-6 first:border-l-0 last:border-r-0">
-                  <h3 className="font-semibold text-15px text-secondary transition-500 group-hover:text-white md:text-base">
-                    Dr. Breidin
+
+                <td className="p-6 border border-[#eeeeee] border-t-0">
+                  <h3 className="font-semibold text-secondary">
+                    Dr. Rahul Deshmukh
                   </h3>
-                  <span className="text-13px md:text-15px text-textPrimary block mt-1.5 transition-500 group-hover:text-white">
+                  <span className="block mt-1 text-textPrimary">
                     Radiologist
                   </span>
                 </td>
-                <td className="group hover:bg-primary p-4 border border-[#eeeeee] border-t-0 transition-500 md:p-6 first:border-l-0 last:border-r-0">
-                  <h3 className="font-semibold text-15px text-secondary transition-500 group-hover:text-white md:text-base">
-                    Dr. Kwak
+
+                <td className="p-6 border border-[#eeeeee] border-t-0">
+                  <h3 className="font-semibold text-secondary">
+                    Dr. Priya Nair
                   </h3>
-                  <span className="text-13px md:text-15px text-textPrimary block mt-1.5 transition-500 group-hover:text-white">
-                    Ear, Nose
+                  <span className="block mt-1 text-textPrimary">
+                    ENT Specialist
                   </span>
                 </td>
-                <td className="group hover:bg-primary p-4 border border-[#eeeeee] border-t-0 transition-500 md:p-6 first:border-l-0 last:border-r-0">
-                  <h3 className="font-semibold text-15px text-secondary transition-500 group-hover:text-white md:text-base">
-                    Dr. Pipe
+
+                <td className="p-6 border border-[#eeeeee] border-t-0">
+                  <h3 className="font-semibold text-secondary">
+                    Dr. Neha Choudhary
                   </h3>
-                  <span className="text-13px md:text-15px text-textPrimary block mt-1.5 transition-500 group-hover:text-white">
-                    Surgeons
+                  <span className="block mt-1 text-textPrimary">
+                    {/* <span className="" */}
+                    General Surgeon
                   </span>
                 </td>
               </tr>
