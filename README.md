@@ -35,13 +35,13 @@ To run BookMyCare locally, follow these steps:
 ### Clone the repository:
 
 ```bash
-git clone https://github.com/taiwo-adewale/apex-care.git
+https://github.com/rahulsamanta82/BookMy_Care.git
 ```
 
 ### Navigate to the project directory:
 
 ```bash
-cd apex-care
+cd BookMy_Care
 ```
 
 ### Install dependencies:
